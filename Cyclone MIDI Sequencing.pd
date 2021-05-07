@@ -1,0 +1,35 @@
+#N canvas 684 116 450 505 12;
+#X obj 99 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 99 74 cyclone/seq cellos.mid;
+#X obj 257 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 75 247 osc~;
+#X obj 70 193 mtof;
+#X floatatom 66 221 5 0 0 0 - - -;
+#X obj 101 99 cyclone/midiparse;
+#X obj 101 136 unpack;
+#X floatatom 69 163 5 0 0 0 - - -;
+#X floatatom 158 159 5 0 0 0 - - -;
+#X obj 71 314 dac~;
+#X obj 136 250 vline~;
+#X obj 79 283 *~;
+#X msg 169 199 1 0 \, 0 500 500;
+#X obj 129 193 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 1 0;
+#X connect 1 0 6 0;
+#X connect 1 1 2 0;
+#X connect 3 0 12 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 1 9 0;
+#X connect 8 0 4 0;
+#X connect 8 0 14 0;
+#X connect 11 0 12 1;
+#X connect 12 0 10 0;
+#X connect 12 0 10 1;
+#X connect 13 0 11 0;
+#X connect 14 0 13 0;

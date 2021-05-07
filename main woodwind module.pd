@@ -1,0 +1,14 @@
+#N canvas 222 185 450 300 12;
+#X obj 160 145 clarinet;
+#X obj 208 106 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6400 1;
+#X obj 62 93 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5100 1;
+#X obj 160 178 dac~;
+#X obj 237 131 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3700 1;
+#X connect 0 0 3 0;
+#X connect 0 0 3 1;
+#X connect 1 0 0 1;
+#X connect 2 0 0 0;
+#X connect 4 0 0 2;

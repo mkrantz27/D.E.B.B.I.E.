@@ -1,0 +1,79 @@
+#N canvas 109 192 899 626 12;
+#X obj 108 449 DEBBIE, f 59;
+#X obj 121 162 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 121 185 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 121 209 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 121 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 313 207 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 313 180 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 313 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 313 233 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 486 151 vsl 15 128 0 300 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 641 211 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 639 254 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 640 233 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 102 53 DEBBIE Instrument Synthesis Kit;
+#X text 139 161 Woodwind Synth;
+#X text 140 184 Bowed Sting Synth;
+#X text 139 208 Formant Vocal Synth;
+#X text 141 230 Plucked String Synth;
+#X text 114 128 Instrument Selection;
+#X text 311 129 Song Selection;
+#X text 335 154 Daisy Bell;
+#X text 336 179 Waterworks;
+#X text 335 206 Earth to Deborah;
+#X text 335 232 The Bard;
+#X text 470 127 Volume;
+#X obj 551 134 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 551 110 Woodwind Detune;
+#X text 637 184 RECORDING;
+#X text 661 209 Open Empty File;
+#X text 660 231 Start Record;
+#X text 660 253 Stop Record;
+#X floatatom 526 209 5 0 0 0 - - -;
+#X text 525 182 MIDI Note;
+#X obj 726 44 switch~;
+#X obj 731 130 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 716 108 On/Off;
+#X obj 526 259 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 520 239 Recording Live;
+#X obj 549 158 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 570 157 Vocal Arpeggiator;
+#X text 124 287 Use the keyboard controls as a piano \, toggle instruments
+above. Change vocal syllable using the 1-5 keys. Change vocal octave
+using < and >. Change vocal sustain using - and +. D.E.B.B.I.E. is
+an instrument synthesis kit based off of STK instrument models;
+#X connect 0 0 36 0;
+#X connect 0 1 31 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 4 0 0 3;
+#X connect 5 0 0 5;
+#X connect 6 0 0 7;
+#X connect 7 0 0 8;
+#X connect 8 0 0 9;
+#X connect 9 0 0 10;
+#X connect 10 0 0 11;
+#X connect 11 0 0 13;
+#X connect 12 0 0 12;
+#X connect 25 0 0 4;
+#X connect 34 0 33 0;
+#X connect 38 0 0 6;
+#X coords 0 -1 1 1 700 300 1 100 100;

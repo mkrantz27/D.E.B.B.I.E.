@@ -1,0 +1,20 @@
+#N canvas 121 86 450 300 12;
+#X obj 157 55 inlet;
+#X obj 313 115 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 156 118 cyclone/midiparse;
+#X obj 157 150 unpack;
+#X floatatom 125 177 5 0 0 0 - - -;
+#X floatatom 210 175 5 0 0 0 - - -;
+#X obj 211 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 124 211 outlet;
+#X obj 156 90 cyclone/seq flute.mid;
+#X connect 0 0 8 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 4 0 7 0;
+#X connect 6 0 8 0;
+#X connect 8 0 2 0;
+#X connect 8 1 1 0;
